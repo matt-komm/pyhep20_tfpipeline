@@ -55,6 +55,7 @@ if (${TF_INC_OK} EQUAL 0)
     )
 endif (${TF_INC_OK} EQUAL 0)
 
+message(STATUS "Tensorflow include path: ${TensorFlow_INCLUDE_DIR}")
 
 execute_process(
 	COMMAND ${PYTHON_EXECUTABLE} -c "from __future__ import print_function; import tensorflow as tf; print('use ABI0','True' if '-D_GLIBCXX_USE_CXX11_ABI=0' in tf.sysconfig.get_compile_flags() else 'False')"
