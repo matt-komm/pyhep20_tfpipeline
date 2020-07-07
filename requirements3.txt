@@ -1,0 +1,4 @@
+nb_conda
+ipykernel
+notebook
+rise
