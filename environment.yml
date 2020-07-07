@@ -1,4 +1,4 @@
-name: tf
+name: tf-environment
 channels:
  - conda-forge
 dependencies:
